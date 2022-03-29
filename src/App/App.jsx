@@ -1,3 +1,5 @@
+import { GlobalProvider } from '../context/GlobalState'
+
 import {
   TransactionsList,
   AddTransaction,
@@ -10,7 +12,7 @@ import './App.css'
 
 const App = () => {
   return (
-    <div>
+    <GlobalProvider>
       <Header />
       <div className="container">
         <Balance />
@@ -18,7 +20,7 @@ const App = () => {
         <TransactionsList />
         <AddTransaction />
       </div>
-    </div>
+    </GlobalProvider>
   )
 }
 
