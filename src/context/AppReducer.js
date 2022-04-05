@@ -1,5 +1,5 @@
-const AppReducer = (state, action) => {
-  switch (action.type) {
+const AppReducer = (state, {type}) => {
+  switch (type) {
     default:
       return state
   }
